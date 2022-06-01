@@ -36,10 +36,10 @@ public class SaisieFromage {
 		    	f.addArticle("", this.prixArticle[0]);
 		    break;
 		case ENTIER_OU_MOITIE : 
-			f = new FromageEntierOuMoitié(désignation);
+			f = new FromageEntierOuMoitie(désignation);
 			if (this.prixArticle != null && this.prixArticle.length == 2) {
-				f.addArticle(FromageEntierOuMoitié.MOITIE, this.prixArticle[0]);
-				f.addArticle(FromageEntierOuMoitié.ENTIER, this.prixArticle[1]);
+				f.addArticle(FromageEntierOuMoitie.MOITIE, this.prixArticle[0]);
+				f.addArticle(FromageEntierOuMoitie.ENTIER, this.prixArticle[1]);
 			}
 			break;
 		case A_L_UNITE_PlUSIEURS_CHOIX :

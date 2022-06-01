@@ -58,7 +58,7 @@ public class TestSaisieFromage {
 	@Test
 	public void testSaisieFromageEntierOuMoitié() {
 		SaisieFromage uneSaisie = new SaisieFromage(null, null, TypeVente.ENTIER_OU_MOITIE);
-		assertTrue(uneSaisie.builderFromage() instanceof FromageEntierOuMoitié);
+		assertTrue(uneSaisie.builderFromage() instanceof FromageEntierOuMoitie);
 	}
 	
 	@Test

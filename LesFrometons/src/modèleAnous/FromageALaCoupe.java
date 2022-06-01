@@ -2,6 +2,7 @@ package modèleAnous;
 public class FromageALaCoupe extends Fromage {
 
 	public FromageALaCoupe(String désignation) {
+
 		super(désignation);
 	}
 	

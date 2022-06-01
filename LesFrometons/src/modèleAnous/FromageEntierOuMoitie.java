@@ -1,11 +1,11 @@
 package modèleAnous;
 
-public class FromageEntierOuMoitié extends Fromage {
+public class FromageEntierOuMoitie extends Fromage {
 	
 	public static final String MOITIE = "moitié";
 	public static final String ENTIER = "entier";
 
-	public FromageEntierOuMoitié(String désignation) {
+	public FromageEntierOuMoitie(String désignation) {
 		super(désignation);
 	}
 	

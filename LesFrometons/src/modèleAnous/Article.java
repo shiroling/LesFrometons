@@ -46,7 +46,12 @@ public class Article {
 	}
 	
 	public boolean equals(Object obj) {
-		Article other = (Article) obj;
+		Article other;
+		if (obj instanceof Article) {
+			other = (Article) obj;
+		} else {
+			return false;
+		}
 		return (this.fromage.equals(other.fromage) && this.clé.equals(other.clé));
 	}
 	

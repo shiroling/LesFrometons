@@ -2,6 +2,7 @@ package modèleAnous;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 
 public class Fromage implements Comparable<Fromage> {
 	
@@ -20,7 +21,6 @@ public class Fromage implements Comparable<Fromage> {
 	}
 	
 	public String getDescription() {
-		assert !(this.description == null);
 		if (this.description == null)
 			return "Pas de description de ce fromage pour le moment. Nous en sommes désolés";
 		return this.description;
@@ -61,8 +61,11 @@ public class Fromage implements Comparable<Fromage> {
 	}
 	
 	public boolean equals(Object obj) {
-		Fromage other = (Fromage) obj;
-		return this.désignation.equals(other.désignation);
+		Fromage other = null;
+		if( obj instanceof Fromage) {
+			other = (Fromage) obj;
+		}
+		return Objects.equals(this.désignation, other.désignation);
 	}
 
 }
