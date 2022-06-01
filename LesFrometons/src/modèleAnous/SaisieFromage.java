@@ -31,7 +31,7 @@ public class SaisieFromage {
 					f.addArticle(this.cléArticle[i], this.prixArticle[i]);
 			break;
 		case A_L_UNITE : 
-		    f = new FromageALUnité(désignation);
+		    f = new FromageALUnite(désignation);
 		    if (this.prixArticle != null)
 		    	f.addArticle("", this.prixArticle[0]);
 		    break;
@@ -43,7 +43,7 @@ public class SaisieFromage {
 			}
 			break;
 		case A_L_UNITE_PlUSIEURS_CHOIX :
-			f = new FromageALUnitéPlusieursChoix(désignation);
+			f = new FromageALUnitePlusieursChoix(désignation);
 			if (this.prixArticle != null && this.prixArticle.length == 1 
 				&& this.cléArticle != null && this.cléArticle.length > 1)
 				for (String clé: this.cléArticle)

@@ -35,7 +35,7 @@ public class TestSaisieFromage {
 	@Test
 	public void testSaisieFromageALunité() {
 		SaisieFromage uneSaisie = new SaisieFromage(null, null, TypeVente.A_L_UNITE);
-		assertTrue(uneSaisie.builderFromage() instanceof FromageALUnité);
+		assertTrue(uneSaisie.builderFromage() instanceof FromageALUnite);
 	}
 	
 	@Test 
@@ -81,7 +81,7 @@ public class TestSaisieFromage {
 	@Test
 	public void testSaisieFromageALunitéPlusieursChoix() {
 		SaisieFromage uneSaisie = new SaisieFromage(null, null, TypeVente.A_L_UNITE_PlUSIEURS_CHOIX);
-		assertTrue(uneSaisie.builderFromage() instanceof FromageALUnitéPlusieursChoix);
+		assertTrue(uneSaisie.builderFromage() instanceof FromageALUnitePlusieursChoix);
 	}
 	
 	@Test

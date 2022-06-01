@@ -2,16 +2,16 @@ package modèleAnous;
 
 public class Article {
 
-	private Fromage fromage;
-	private String clé;
-	private float prixTTC;
-	private int quantitéEnStock;
+	private final Fromage fromage;
+	private final String clé;
+	private final float prixTTC;
+	private int quantiteEnStock;
 	
 	public Article(Fromage fromage, String clé, float prixTTC) {
 		this.fromage = fromage;
 		this.clé = clé;
 		this.prixTTC = prixTTC;
-		this.quantitéEnStock = 0;
+		this.quantiteEnStock = 0;
 	}
 	
 	public Fromage getFromage() {
@@ -22,16 +22,16 @@ public class Article {
 		return this.prixTTC;
 	}
 	
-	public int getQuantitéEnStock() {
-		return quantitéEnStock;
+	public int getQuantiteEnStock() {
+		return quantiteEnStock;
 	}
 	
 	public String getClé() {
 		return this.clé;
 	}
 
-	public void setQuantitéEnStock(int quantitéEnStock) {
-		this.quantitéEnStock = quantitéEnStock;
+	public void setQuantiteEnStock(int quantiteEnStock) {
+		this.quantiteEnStock = quantiteEnStock;
 	}
 
 	public String toString() {
@@ -42,7 +42,7 @@ public class Article {
 	}
 	
 	public String toStringAvecStock() {
-		return this.toString() + ", Quantité en stock : " + this.quantitéEnStock;
+		return this.toString() + ", Quantité en stock : " + this.quantiteEnStock;
 	}
 	
 	public boolean equals(Object obj) {

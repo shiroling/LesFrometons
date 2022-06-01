@@ -1,7 +1,7 @@
 package modèleAnous;
-public class FromageALUnité extends Fromage {
+public class FromageALUnite extends Fromage {
 	
-	public FromageALUnité(String désignation) {
+	public FromageALUnite(String désignation) {
 		super(désignation);
 	}
 
