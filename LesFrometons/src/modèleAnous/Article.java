@@ -46,6 +46,13 @@ public class Article {
 	}
 	
 	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+
 		Article other;
 		if (obj instanceof Article) {
 			other = (Article) obj;
