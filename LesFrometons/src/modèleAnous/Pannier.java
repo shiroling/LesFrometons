@@ -4,10 +4,10 @@ package modèleAnous;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Panier {
+public class Pannier {
     private List<Article> barquette;
 
-	public Panier() {
+	public Pannier() {
 		this.barquette = new ArrayList<Article>();
 	}
 
@@ -15,17 +15,31 @@ public class Panier {
 		this.barquette.add(a);
 	}
 
+	public int prixTotal() {
+		int sum = 0;
+		for (Article a: this.barquette) {
+			sum += a.getPrixTTC();
+		}
+		return sum;
+	}
+
+	public int nombreElement() {
+		return this.barquette.size();
+	}
+
     @Override
 	public String toString() {
-		StringBuffer enForme = new StringBuffer();
+		StringBuilder enForme = new StringBuilder();
+
 		for (Article a : barquette) {
 			enForme.append(a.toStringAvecStock());
 		}
-		return enForme.toString();
+		return enForme.toString();	
 	}
 
 	public String toStringIHM() {
-		StringBuffer enForme = new StringBuffer();
+		StringBuilder enForme = new StringBuilder();
+
 		for (Article a : barquette) {
 			enForme.append(a.toString());
 		}
