@@ -64,6 +64,15 @@ public class Articles {
 		return listeFromages;
 	}
 
+	public List<Fromage> fromagesAuLaiotDe(TypeLait lait) {
+		List<Fromage> list = new ArrayList<>();
+		for (Fromage f: listeFromages) {
+			if (f. ) {
+				list.add(f);
+			}
+		}
+		return list;	}
+
 	public static List<Fromage> getStockOnly(List<Fromage> listeFromages) {
 		List<Fromage> listFromagesStock = new ArrayList<>();
 		for (Fromage f: listeFromages) {

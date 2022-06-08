@@ -67,14 +67,4 @@ public class Fromage implements Comparable<Fromage> {
 		}
 		return Objects.equals(this.désignation, other.désignation);
 	}
-
-	public boolean isChevre() {
-		return this.typeFromage == TypeLait.CHEVRE;
-	}
-	public boolean isVache() {
-		return this.typeFromage == TypeLait.VACHE;
-	}
-	public boolean isBrebis() {
-		return this.typeFromage == TypeLait.BREBIS;
-	}
 }
